@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Chauhan | Enterprise IT Infrastructure Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: {
+                        dark: { 900: '#020617', 800: '#0f172a', 700: '#1e293b' },
+                        accent: { DEFAULT: '#38bdf8', hover: '#0ea5e9', glow: 'rgba(56, 189, 248, 0.5)' } 
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #e2e8f0; overflow-x: hidden; }
+        
+        /* Glassmorphism Card Style */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+            transform: translateY(-3px);
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Background Gradient Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        /* Custom Bullet Points */
+        ul.custom-bullets li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        ul.custom-bullets li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-black">
+
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <div class="orb w-96 h-96 bg-blue-600 top-0 left-0 animate-blob"></div>
+        <div class="orb w-96 h-96 bg-purple-600 bottom-0 right-0 animate-blob" style="animation-delay: 2s;"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 glass-card border-b border-white/5 bg-dark-900/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider text-white">
+                GAURAV<span class="text-accent">CHAUHAN</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#summary" class="hover:text-accent transition">About</a>
+                <a href="#achievements" class="hover:text-accent transition">Metrics</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+            </div>
+			<a href="Gaurav_Chauhan_Resume.pdf" download class="hidden md:flex items-center gap-2 px-4 py-2 border border-accent/50 text-accent font-bold rounded-full hover:bg-accent/10 transition">
+                    <i class="fas fa-file-arrow-down"></i> Resume Download</a>
+                
+			<a href="mailto:chauhangaurav823@gmail.com" class="px-5 py-2 bg-accent text-dark-900 font-bold rounded-full hover:bg-accent-hover transition shadow-[0_0_15px_rgba(56,189,248,0.4)]">
+                Hire Me
+				</a>
+				</a>
+        </div>
+    </nav>
+
+    <section id="summary" class="pt-36 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="reveal active animate-fade-in">
+            <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold uppercase tracking-wide">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                </span>
+                Open to Relocation
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+                GAURAV CHAUHAN
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-slate-300 font-light mb-8">
+                Enterprise IT Infrastructure Engineer — <span class="text-accent font-semibold">Technical Support Specialist</span>
+            </h2>
+
+            <div class="flex flex-wrap gap-4 text-sm font-mono text-slate-400 mb-10">
+                <span class="flex items-center gap-2"><i class="fas fa-envelope text-accent"></i> chauhangaurav823@gmail.com</span>
+                <span class="hidden md:inline">|</span>
+                <span class="flex items-center gap-2"><i class="fas fa-phone text-accent"></i> +91-9310942205</span>
+                <span class="hidden md:inline">|</span>
+                <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-accent"></i> Faridabad, Haryana, India</span>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl border-l-4 border-accent">
+                <h3 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Professional Summary</h3>
+                <p class="text-slate-300 leading-relaxed text-lg">
+                    Results-driven IT Infrastructure Engineer with 5.5+ years delivering enterprise technical support across manufacturing, financial services, and microfinance sectors. Proven expertise managing IT operations for 750+ users across 50+ distributed locations while maintaining 99.9% uptime and 95-98% first-contact resolution. Core competencies include Windows enterprise administration, Active Directory, network infrastructure, ITSM platforms, and ITIL implementation. Strong track record optimizing processes, collaborating cross-functionally, and translating technical concepts into business value.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-10 px-6 max-w-7xl mx-auto">
+        <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 reveal">
+            <i class="fas fa-trophy text-yellow-500"></i> Key Achievements & Performance Metrics
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold text-accent mb-2">750+</div>
+                <p class="text-slate-400 text-sm">Successfully supported end users across 50+ branch locations spanning multiple geographic regions.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold text-accent mb-2">99.9%</div>
+                <p class="text-slate-400 text-sm">Infrastructure uptime maintained through proactive monitoring, preventive maintenance, and rapid incident response.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold text-accent mb-2">95-98%</div>
+                <p class="text-slate-400 text-sm">First-contact resolution achieved on daily ticket volumes of 15-50+ across multiple channels.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-xl font-bold text-white mb-2"><i class="fas fa-check-circle text-green-500 mr-2"></i>Zero-Downtime</div>
+                <p class="text-slate-400 text-sm">Executed zero-downtime deployments for critical infrastructure upgrades and software migrations.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-xl font-bold text-white mb-2"><i class="fas fa-arrow-down text-accent mr-2"></i>Escalations -40%</div>
+                <p class="text-slate-400 text-sm">Reduced tier-2 escalations by 40% and ticket backlog by 30% through ITIL implementation.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-xl font-bold text-white mb-2"><i class="fas fa-rocket text-purple-500 mr-2"></i>Onboarding +60%</div>
+                <p class="text-slate-400 text-sm">Accelerated customer onboarding speed by 60% through standardized documentation.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl bg-gradient-to-br from-accent/10 to-transparent border-accent/30">
+                <div class="text-xl font-bold text-white mb-2"><i class="fas fa-star text-yellow-400 mr-2"></i>100% Satisfaction</div>
+                <p class="text-slate-400 text-sm">Consistently earned 100% user satisfaction ratings for technical competence and professionalism.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-dark-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 border-b border-gray-700 pb-4 reveal">Professional Experience</h2>
+            
+            <div class="space-y-16">
+                
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 gap-8 reveal">
+                    <div class="hidden md:block absolute left-[33.33%] top-0 bottom-0 w-px bg-gray-700"></div>
+                    <div class="md:col-span-4 text-right md:pr-12 relative">
+                        <div class="absolute right-[-54px] top-1 w-4 h-4 rounded-full bg-accent outline outline-4 outline-dark-900 hidden md:block"></div>
+                        <h3 class="text-xl font-bold text-white">IT Executive</h3>
+                        <div class="text-accent font-semibold mb-1">Unity Shared Services Pvt Ltd</div>
+                        <div class="text-sm text-slate-500 font-mono">March 2024 – Present</div>
+                        <div class="text-xs text-slate-600 mt-1">Palwal, Haryana (50+ Branches)</div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-6 rounded-2xl">
+                        <ul class="custom-bullets text-slate-300 text-sm leading-relaxed space-y-2">
+                            <li>Direct end-to-end IT operations for 300+ employees across 50+ microfinance branches. Process 35+ daily support tickets via phone, email, and Microsoft Teams maintaining 98% first-contact resolution rate.</li>
+                            <li>Architect and deploy standardized LAN infrastructure including Cat5e/Cat6 cabling, RJ45 termination, switch configuration, and IP schemes.</li>
+                            <li>Implement network printing solutions and POS terminal connectivity achieving zero-downtime during critical business periods.</li>
+                            <li>Lead hardware lifecycle from vendor negotiations through procurement, deployment, and maintenance. Maintain comprehensive asset inventory ensuring 100% operational continuity.</li>
+                            <li>Troubleshoot mobile banking applications resolving connectivity, crashes, and integration issues. Provide tier-2 escalation support for complex technical problems.</li>
+                            <li>Develop technical documentation including network diagrams, SOPs, troubleshooting guides, and configuration standards. Create accessible knowledge repositories.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 gap-8 reveal">
+                    <div class="hidden md:block absolute left-[33.33%] top-0 bottom-0 w-px bg-gray-700"></div>
+                    <div class="md:col-span-4 text-right md:pr-12 relative">
+                        <div class="absolute right-[-54px] top-1 w-4 h-4 rounded-full bg-slate-600 outline outline-4 outline-dark-900 hidden md:block"></div>
+                        <h3 class="text-xl font-bold text-white">Senior Engineer</h3>
+                        <div class="text-accent font-semibold mb-1">Microland Limited</div>
+                        <div class="text-xs text-yellow-500 font-bold mb-1"><i class="fas fa-briefcase"></i> Client: Maruti Suzuki India Ltd</div>
+                        <div class="text-sm text-slate-500 font-mono">Nov 2022 – March 2024</div>
+                        <div class="text-xs text-slate-600">Gurugram, Haryana</div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-6 rounded-2xl">
+                        <ul class="custom-bullets text-slate-300 text-sm leading-relaxed space-y-2">
+                            <li>Delivered L1/L2 support for 200+ users in manufacturing environment processing 40+ daily I-serve tickets.</li>
+                            <li>Achieved 95% first-contact resolution and 100% customer satisfaction through comprehensive Windows 10/11, Office 365, and hardware support.</li>
+                            <li>Administered Active Directory including user provisioning/deprovisioning, security groups, GPOs, and access audits.</li>
+                            <li>Implemented ITIL best practices for incident, problem, and change management reducing ticket backlog by 30% through root cause analysis.</li>
+                            <li>Configured production-critical systems including network printing, production terminals, barcode scanners, and label printers.</li>
+                            <li>Coordinated SCCM software distribution, security patches, and Windows updates across 200+ endpoints.</li>
+                            <li>Authored 50+ knowledge base articles improving team efficiency by 25%. Conducted knowledge transfer sessions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 gap-8 reveal">
+                    <div class="hidden md:block absolute left-[33.33%] top-0 bottom-0 w-px bg-gray-700"></div>
+                    <div class="md:col-span-4 text-right md:pr-12 relative">
+                        <div class="absolute right-[-54px] top-1 w-4 h-4 rounded-full bg-slate-600 outline outline-4 outline-dark-900 hidden md:block"></div>
+                        <h3 class="text-xl font-bold text-white">Desktop Support Eng.</h3>
+                        <div class="text-accent font-semibold mb-1">IDC Technologies</div>
+                        <div class="text-xs text-yellow-500 font-bold mb-1"><i class="fas fa-university"></i> Client: IDFC First Bank</div>
+                        <div class="text-sm text-slate-500 font-mono">June 2021 – Nov 2022</div>
+                        <div class="text-xs text-slate-600">New Delhi</div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-6 rounded-2xl">
+                        <ul class="custom-bullets text-slate-300 text-sm leading-relaxed space-y-2">
+                            <li>Provided L1/L2 support for 300+ banking professionals managing Windows 10/11, Office 365, and proprietary banking software.</li>
+                            <li>Processed 50+ daily ServiceNow incidents achieving 95% FCR while reducing tier-2 escalations by 40%.</li>
+                            <li>Maintained 100% compliance with banking regulatory requirements (RBI guidelines, information security, data protection, audit controls).</li>
+                            <li>Enforced access policies, password complexity, and security awareness protocols while participating in quarterly audits.</li>
+                            <li>Deployed LAN infrastructure across banking branches including switch installation, VLAN configuration, and network printer setup.</li>
+                            <li>Ensured reliable connectivity for RTGS/NEFT transactions, ATM systems, and customer service terminals.</li>
+                            <li>Provided white-glove support to executives and relationship managers. Conducted training sessions on security best practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-0 md:grid md:grid-cols-12 gap-8 reveal">
+                    <div class="hidden md:block absolute left-[33.33%] top-0 bottom-0 w-px bg-gray-700"></div>
+                    <div class="md:col-span-4 text-right md:pr-12 relative">
+                        <div class="absolute right-[-54px] top-1 w-4 h-4 rounded-full bg-purple-500 outline outline-4 outline-dark-900 hidden md:block"></div>
+                        <h3 class="text-xl font-bold text-white">Technical Support Eng.</h3>
+                        <div class="text-accent font-semibold mb-1">Semtech Infotech</div>
+                        <div class="text-xs text-purple-400 font-bold mb-1"><i class="fas fa-robot"></i> Project: Facechk AI Biometric</div>
+                        <div class="text-sm text-slate-500 font-mono">July 2020 – June 2021</div>
+                        <div class="text-xs text-slate-600">New Delhi</div>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-6 rounded-2xl border-l-2 border-purple-500">
+                        <ul class="custom-bullets text-slate-300 text-sm leading-relaxed space-y-2">
+                            <li>Executed live demonstrations of AI-powered facial recognition system for 20+ enterprise prospects achieving 95%+ accuracy benchmarks.</li>
+                            <li>Successfully converted 5+ demonstrations into pilot deployments across corporate, educational, and government sectors.</li>
+                            <li>Designed and delivered technical training covering Raspberry Pi setup, Linux basics, OpenCV configuration, Flask deployment, and system administration.</li>
+                            <li>Developed documentation reducing customer onboarding time by 60%.</li>
+                            <li>Configured Raspberry Pi edge computing devices for on-premise processing. Implemented camera interfaces, optimized OpenCV algorithms, and deployed Flask web servers.</li>
+                            <li>Resolved networking challenges involving MQTT messaging and WebSocket connections achieving 100% deployment success.</li>
+                            <li>Served as customer-to-development liaison providing feature requests, bug reports, and UX insights.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-10 text-center reveal">Technical Skills & Competencies</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            
+            <div class="glass-card p-6 rounded-xl">
+                <h4 class="text-accent font-bold mb-4 border-b border-gray-700 pb-2">Operating Systems & Platforms</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Windows 10/11 (Pro, Enterprise), Windows Server 2016/2019, Active Directory (ADDS, Azure AD), Group Policy, Office 365/M365, SharePoint, Teams, Exchange Online
+                </p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h4 class="text-accent font-bold mb-4 border-b border-gray-700 pb-2">Networking</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    TCP/IP, DHCP, DNS, VLAN, LAN/WAN, RJ45/Cat5e/Cat6 Cabling, Switch Configuration, VPN (IPSec, SSL), Network Printer Deployment, Wi-Fi Setup, Basic Firewall Rules
+                </p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h4 class="text-accent font-bold mb-4 border-b border-gray-700 pb-2">ITSM & Frameworks</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    ServiceNow (Admin, Workflow), BMC Remedy, I-serve, Jira, ITIL v3/v4 (Incident, Problem, Change, Service Request), SLA Management, Root Cause Analysis, Knowledge Management
+                </p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h4 class="text-accent font-bold mb-4 border-b border-gray-700 pb-2">Hardware & Endpoints</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Desktop/Laptop Diagnostics & Repair, BIOS Configuration, Network Printers, Biometric Devices, POS Terminals, CCTV, Asset Management, Vendor Relations
+                </p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h4 class="text-accent font-bold mb-4 border-b border-gray-700 pb-2">Development & Tools</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Python, PowerShell, Bash, Raspberry Pi, OpenCV, Flask, MQTT, WebSocket, RDP, AnyDesk, TeamViewer, Windows Defender, McAfee, Symantec
+                </p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900">
+                <h4 class="text-white font-bold mb-4 border-b border-gray-700 pb-2 flex items-center gap-2"><i class="fas fa-graduation-cap"></i> Education</h4>
+                <div class="text-sm font-bold text-white">Bachelor of Computer Applications (BCA)</div>
+                <div class="text-xs text-slate-400 mb-2">Maharishi Dayanand University (MDU), Rohtak</div>
+                <div class="text-accent text-xs font-bold">Graduated: 2020</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-dark-800 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <h3 class="text-xl font-bold text-white mb-6">Professional Development & Target Certifications</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-slate-300 text-sm"><i class="fas fa-certificate text-yellow-500 mr-2"></i>CompTIA A+</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-slate-300 text-sm"><i class="fas fa-certificate text-yellow-500 mr-2"></i>CompTIA Network+</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-slate-300 text-sm"><i class="fas fa-certificate text-yellow-500 mr-2"></i>Microsoft 365 Certified</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-slate-300 text-sm"><i class="fas fa-certificate text-yellow-500 mr-2"></i>ITIL 4 Foundation</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-900 bg-black">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h4 class="text-white font-bold mb-4">Additional Information</h4>
+                <p class="text-slate-500 text-sm">Languages: English (Professional), Hindi (Native)</p>
+                <p class="text-slate-500 text-sm">Notice Period: Immediate</p>
+                <p class="text-slate-500 text-sm">Willing to Relocate: Yes</p>
+            </div>
+            <div class="text-center">
+                <a href="mailto:chauhangaurav823@gmail.com" class="inline-block w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent hover:rotate-12 transition mx-2">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+919310942205" class="inline-block w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent hover:rotate-12 transition mx-2">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <div class="mt-4 text-slate-600 text-xs">© 2026 Gaurav Chauhan</div>
+            </div>
+            <div class="md:text-right">
+                <p class="text-slate-600 text-sm italic">"Translating technical concepts into business value."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+    </script>
+</body>
+</html>
